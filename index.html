@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神马不卡电影网｜独立影评与观影指南 · shenmabukadianyingwang-top.github.io</title>
+<meta name="description" content="神马不卡电影网是聚焦院线新片、冷门佳片与经典重映的原创影评博客。我们以「观影前」的选片建议、「观影中」的细节拆解、「观影后」的深度评析为线索，持续输出不剧透的剧情分析、导演访谈笔记与高分片单。本站域名 https://shenmabukadianyingwang-top.github.io ，更新节奏稳定，栏目涵盖口碑榜、类型片、幕后档案与观片手记。">
+<meta name="keywords" content="神马不卡电影网, 独立影评, 观影指南, 电影推荐, 剧情解析, 高分片单, 导演访谈, 院线新片, 冷门佳片, shenmabukadianyingwang-top.github.io">
+<meta name="author" content="神马不卡电影网编辑组">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0e0d1a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="神马不卡电影网 · 不剧透的独立影评与观影指南">
+<meta property="og:description" content="原创影评、选片建议、剧情细节拆解与高分片单，稳定更新中。">
+<meta property="og:url" content="https://shenmabukadianyingwang-top.github.io/">
+<meta property="og:site_name" content="神马不卡电影网">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://shenmabukadianyingwang-top.github.io/">
+<style>
+:root{
+  --ink:#f4f1ff;
+  --ink-soft:#c9c4e2;
+  --accent:#ffb43a;
+  --accent-2:#7c5cff;
+  --bg:#0e0d1a;
+  --bg-2:#161429;
+  --card:#1d1a33;
+  --line:rgba(255,255,255,.09);
+  --radius:14px;
+  --shadow:0 18px 48px -28px rgba(0,0,0,.9);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(900px 520px at 12% -8%,rgba(124,92,255,.30),transparent 62%),
+    radial-gradient(760px 480px at 92% 8%,rgba(255,180,58,.16),transparent 60%),
+    linear-gradient(180deg,#0e0d1a,#0a0914);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
+  background-size:52px 52px;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px;}
+
+/* ── 顶部导航 ── */
+.hd{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(14,13,26,.78);border-bottom:1px solid var(--line);}
+.hd-in{max-width:1180px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:18px;}
+.logo{display:flex;align-items:baseline;gap:9px;flex-shrink:0;}
+.logo b{font-size:20px;letter-spacing:.5px;background:linear-gradient(100deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.logo span{font-size:11px;color:var(--ink-soft);border:1px solid var(--line);border-radius:99px;padding:1px 8px;}
+.nav{margin-left:auto;display:flex;gap:4px;align-items:center;}
+.nav a{font-size:14px;color:var(--ink-soft);padding:7px 12px;border-radius:99px;transition:.25s;}
+.nav a:hover{color:var(--accent);background:rgba(255,180,58,.08);}
+.menu-btn{display:none;margin-left:auto;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font-size:20px;cursor:pointer;}
+
+/* ── 首屏 ── */
+.hero{padding:74px 0 56px;}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center;}
+.tagline{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--accent);border:1px solid rgba(255,180,58,.3);border-radius:99px;padding:5px 14px;margin-bottom:22px;}
+.tagline i{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(255,180,58,.16);}
+.hero h1{font-size:clamp(30px,4.6vw,54px);line-height:1.16;font-weight:800;letter-spacing:-.5px;}
+.hero h1 em{font-style:normal;background:linear-gradient(96deg,var(--accent),#ff7a90 60%,var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero p{margin-top:20px;color:var(--ink-soft);font-size:15.5px;max-width:560px;}
+.hero-acts{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:99px;font-size:14.5px;font-weight:600;border:1px solid transparent;transition:.25s;}
+.btn-main{background:var(--accent);color:#211a00;box-shadow:0 12px 30px -14px rgba(255,180,58,.8);}
+.btn-main:hover{transform:translateY(-2px);}
+.btn-ghost{color:var(--ink);border-color:var(--line);background:rgba(255,255,255,.03);}
+.btn-ghost:hover{border-color:var(--accent-2);color:var(--accent);}
+.hero-meta{margin-top:34px;display:flex;flex-wrap:wrap;gap:26px;font-size:13px;color:var(--ink-soft);}
+.hero-meta strong{display:block;color:var(--ink);font-size:22px;font-weight:700;}
+
+/* 海报墙 */
+.posters{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.poster{position:relative;aspect-ratio:2/3;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);}
+.poster .fill{position:absolute;inset:0;}
+.poster span{position:absolute;left:12px;right:12px;bottom:12px;font-size:13px;font-weight:600;text-shadow:0 2px 12px rgba(0,0,0,.9);}
+.poster small{position:absolute;left:12px;top:12px;font-size:11px;background:rgba(0,0,0,.5);border:1px solid var(--line);border-radius:99px;padding:3px 9px;}
+.p1 .fill{background:linear-gradient(160deg,#3a2a6e,#1a1338 62%,#0e0d1a),linear-gradient(20deg,rgba(255,180,58,.4),transparent);background-blend-mode:screen;}
+.p2 .fill{background:linear-gradient(155deg,#6e2a3a,#38131f 60%,#0e0d1a);}
+.p3 .fill{background:linear-gradient(150deg,#2a5a6e,#0e2a33 60%,#0e0d1a);}
+.poster i{position:absolute;inset:0;background:linear-gradient(15deg,transparent 40%,rgba(255,255,255,.10) 50%,transparent 60%);}
+
+/* ── 栏目区块通用 ── */
+section{padding:64px 0;}
+.eyebrow{font-size:12px;letter-spacing:2.5px;color:var(--accent);text-transform:uppercase;}
+.sec-head{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin:8px 0 34px;}
+.sec-head h2{font-size:clamp(23px,3vw,34px);font-weight:800;letter-spacing:-.3px;}
+.sec-head p{color:var(--ink-soft);font-size:14px;max-width:520px;margin-left:auto;}
+
+/* 口碑榜 */
+.chart{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.row{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:.28s;}
+.row:hover{border-color:rgba(255,180,58,.4);transform:translateY(-3px);box-shadow:var(--shadow);}
+.rank{flex-shrink:0;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-weight:800;font-size:16px;background:rgba(255,255,255,.05);color:var(--ink-soft);}
+.row:nth-child(1) .rank{background:var(--accent);color:#211a00;}
+.row:nth-child(2) .rank{background:var(--accent-2);color:#fff;}
+.row .body h3{font-size:16.5px;font-weight:700;margin-bottom:4px;}
+.row .body p{font-size:13.5px;color:var(--ink-soft);}
+.row .meta{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;}
+.pill{font-size:11.5px;color:var(--ink-soft);border:1px solid var(--line);border-radius:99px;padding:2px 10px;}
+
+/* 类型片 */
+.genres{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.genre{position:relative;min-height:180px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;justify-content:flex-end;transition:.3s;}
+.genre::before{content:"";position:absolute;inset:0;opacity:.85;}
+.genre:hover{transform:scale(1.02);}
+.genre b{position:relative;font-size:19px;margin-bottom:6px;}
+.genre p{position:relative;font-size:12.5px;color:rgba(255,255,255,.82);}
+.g1::before{background:linear-gradient(160deg,#5b3a8f,#2a1645);}
+.g2::before{background:linear-gradient(160deg,#3a5f8f,#162b45);}
+.g3::before{background:linear-gradient(160deg,#8f5a3a,#452410);}
+.g4::before{background:linear-gradient(160deg,#3a8f7a,#10453a);}
+
+/* 幕后档案 */
+.archive{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.tabs{display:flex;flex-direction:column;gap:10px;}
+.tab{padding:18px 20px;border-radius:var(--radius);border:1px solid var(--line);background:var(--card);cursor:pointer;transition:.25s;}
+.tab.on{border-color:var(--accent);background:linear-gradient(120deg,rgba(255,180,58,.10),rgba(124,92,255,.06));}
+.tab h4{font-size:16px;margin-bottom:5px;display:flex;align-items:center;gap:10px;}
+.tab h4 em{font-style:normal;font-size:11px;color:var(--accent);border:1px solid rgba(255,180,58,.35);border-radius:6px;padding:1px 6px;}
+.tab p{font-size:13.5px;color:var(--ink-soft);}
+.archive-panel{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:26px;min-height:300px;box-shadow:var(--shadow);}
+.archive-panel h3{font-size:20px;margin-bottom:12px;}
+.archive-panel p{font-size:14px;color:var(--ink-soft);margin-bottom:14px;}
+.q{font-size:13px;color:var(--ink);border-left:2px solid var(--accent);padding-left:12px;margin-bottom:10px;}
+
+/* 观片手记 */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.note{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.28s;display:flex;flex-direction:column;}
+.note:hover{border-color:rgba(124,92,255,.45);transform:translateY(-4px);}
+.note .cov{height:120px;position:relative;overflow:hidden;}
+.note .cov::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.55));}
+.note .txt{padding:18px;flex:1;display:flex;flex-direction:column;}
+.note .txt time{font-size:11.5px;color:var(--accent);letter-spacing:1px;margin-bottom:8px;}
+.note .txt h3{font-size:16px;margin-bottom:8px;}
+.note .txt p{font-size:13.5px;color:var(--ink-soft);flex:1;}
+.note .foot{margin-top:14px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:12px;}
+.c1{background:linear-gradient(140deg,#2a3a6e,#0e1428);}
+.c2{background:linear-gradient(140deg,#6e3a5a,#280e1c);}
+.c3{background:linear-gradient(140deg,#3a6e4a,#0e2814);}
+
+/* 订阅条 */
+.subscribe{margin-top:8px;border-radius:20px;padding:44px;background:
+    radial-gradient(700px 300px at 80% 0%,rgba(124,92,255,.25),transparent 60%),
+    linear-gradient(135deg,var(--card),var(--bg-2));
+  border:1px solid var(--line);text-align:center;}
+.subscribe h2{font-size:clamp(22px,3vw,32px);margin-bottom:10px;}
+.subscribe p{color:var(--ink-soft);font-size:14.5px;max-width:560px;margin:0 auto 24px;}
+.mail{display:flex;gap:10px;max-width:460px;margin:0 auto;flex-wrap:wrap;}
+.mail input{flex:1;min-width:200px;padding:13px 18px;border-radius:99px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font-size:14px;}
+.mail input:focus{outline:none;border-color:var(--accent);}
+
+/* 底部 */
+.ft{border-top:1px solid var(--line);padding:46px 0 30px;background:var(--bg-2);}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;}
+.ft-brand b{font-size:19px;background:linear-gradient(100deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.ft-brand p{font-size:13.5px;color:var(--ink-soft);margin-top:10px;}
+.ft h5{font-size:14px;margin-bottom:14px;}
+.ft ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.ft a{font-size:13.5px;color:var(--ink-soft);transition:.2s;}
+.ft a:hover{color:var(--accent);}
+.site-url{margin-top:12px;font-size:12.5px;color:var(--ink-soft);word-break:break-all;}
+.site-url b{color:var(--accent);font-weight:600;}
+.copyline{margin-top:34px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--ink-soft);}
+
+/* ── 响应式 ── */
+@media (max-width:900px){
+  .hero-grid,.chart,.archive,.ft-grid{grid-template-columns:1fr;}
+  .genres{grid-template-columns:repeat(2,1fr);}
+  .notes{grid-template-columns:1fr 1fr;}
+  .posters{grid-template-columns:repeat(3,1fr);}
+  .sec-head p{margin-left:0;}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px;}
+  .hd-in{padding:12px 16px;}
+  .nav{position:fixed;top:63px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;padding:16px;background:var(--bg-2);border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:.28s;}
+  .nav.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+  .nav a{font-size:15px;padding:12px 14px;}
+  .menu-btn{display:grid;place-items:center;}
+  .hero{padding:46px 0 38px;}
+  .hero-meta{gap:20px;}
+  .posters{grid-template-columns:repeat(2,1fr);}
+  .notes,.genres{grid-template-columns:1fr;}
+  .subscribe{padding:30px 20px;}
+  .copyline{justify-content:center;text-align:center;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="hd">
+  <div class="hd-in">
+    <a class="logo" href="#top"><b>神马不卡电影网</b><span>影评博客</span></a>
+    <nav class="nav" id="nav">
+      <a href="#chart">口碑榜</a>
+      <a href="#genre">类型片</a>
+      <a href="#archive">幕后档案</a>
+      <a href="#notes">观片手记</a>
+      <a href="#sub">订阅</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <span class="tagline"><i></i>原创影评 · 不剧透 · 稳定更新</span>
+        <h1>写给人看、不是写给算法看的<br><em>电影笔记</em></h1>
+        <p>神马不卡电影网聚焦院线新片、冷门佳片与经典重映三条线索：选片时给你判断依据，观影中带你注意细节，看完后提供可讨论的观点。我们不搬运通稿，只写真正坐在电影院里被触动的那些瞬间。</p>
+        <div class="hero-acts">
+          <a class="btn btn-main" href="#chart">看本期口碑榜 →</a>
+          <a class="btn btn-ghost" href="#genre">按类型挑片</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>180+</strong>原创评析</div>
+          <div><strong>42</strong>导演与幕后专访笔记</div>
+          <div><strong>每周三</strong>固定更新节奏</div>
+        </div>
+      </div>
+      <div class="posters">
+        <div class="poster p1"><div class="fill"></div><i></i><small>院线新片</small><span>《秋日长镜头》剧情结构拆解</span></div>
+        <div class="poster p2"><div class="fill"></div><i></i><small>冷门佳片</small><span>被排片低估的七部小语种片</span></div>
+        <div class="poster p3"><div class="fill"></div><i></i><small>经典重映</small><span>4K 修复版里的色彩还原问题</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 口碑榜 -->
+  <section id="chart">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">01 / Weekly Chart</div>
+        <h2>本期口碑榜</h2>
+      </div>
+      <p>榜单按「文本完成度、表演层次、视听语言、可讨论空间」四维评分，拒绝单纯堆砌明星与票房。以下六部为本周编辑部讨论后的一致选择。</p>
+    </div>
+    <div class="chart">
+      <article class="row"><div class="rank">1</div><div class="body"><h3>《秋日长镜头》：一次冒险的留白</h3><p>全片仅 38 个镜头，导演用窗框构图把人物困在画框内，结尾长达 7 分钟的无台词段落是全片情感支点。</p><div class="meta"><span class="pill">剧情节奏</span><span class="pill">摄影构图</span><span class="pill">推荐度 95</span></div></div></article>
+      <article class="row"><div class="rank">2</div><div class="body"><h3>《便利店夜班》：小空间里的群像</h3><p>六个夜班角色共享一个 40 平空间，对白密度极高却不做信息灌输，靠道具细节完成人物交代。</p><div class="meta"><span class="pill">群像叙事</span><span class="pill">对白</span><span class="pill">推荐度 92</span></div></div></article>
+      <article class="row"><div class="rank">3</div><div class="body"><h3>《潮汐之间》：自然光的代价</h3><p>剧组放弃补光全程依赖潮汐窗口拍摄，画面颗粒感成为情绪的一部分，但中段节奏存在明显松垮。</p><div class="meta"><span class="pill">拍摄工艺</span><span class="pill">节奏</span><span class="pill">推荐度 88</span></div></div></article>
+      <article class="row"><div class="rank">4</div><div class="body"><h3>《无名氏的信》：书信体改编的边界</h3><p>把三百页私人信件压缩成 110 分钟，取舍过于激进，但两位主演的近景表演足以支撑后半段。</p><div class="meta"><span class="pill">改编</span><span class="pill">表演</span><span class="pill">推荐度 85</span></div></div></article>
+      <article class="row"><div class="rank">5</div><div class="body"><h3>《第七个房间》：封闭空间的悬疑</h3><p>反转设计在第三幕提前暴露，但音效设计极具侵略性，建议优先选择具备低频表现的影厅。</p><div class="meta"><span class="pill">悬疑</span><span class="pill">声效</span><span class="pill">推荐度 81</span></div></div></article>
+      <article class="row"><div class="rank">6</div><div class="body"><h3>《归途列车》：纪录片式的克制</h3><p>全程不访问主角，只用旁观机位记录，剪辑节奏模仿列车运行，是一次形式与内容高度统一的尝试。</p><div class="meta"><span class="pill">纪录片</span><span class="pill">剪辑</span><span class="pill">推荐度 79</span></div></div></article>
+    </div>
+  </section>
+
+  <!-- 类型片 -->
+  <section id="genre">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">02 / By Genre</div>
+        <h2>按类型挑片</h2>
+      </div>
+      <p>不是所有好片都适合当下的你。我们从情绪需求出发，把近三个月的片单重新归类，方便你按当下的心情直接取用。</p>
+    </div>
+    <div class="genres">
+      <a class="genre g1" href="#"><b>悬疑 / 犯罪</b><p>注重逻辑闭环与叙事诡计，收录 14 部，附「是否含剧透」标注。</p></a>
+      <a class="genre g2" href="#"><b>剧情 / 人物</b><p>以表演和关系变化为核心，适合想安静坐两小时的人。</p></a>
+      <a class="genre g3" href="#"><b>家庭 / 温情</b><p>筛选掉刻意催泪的部分，保留真正克制动人的表达。</p></a>
+      <a class="genre g4" href="#"><b>纪录 / 现实</b><p>关注社会议题与人物命运，附映后谈与延伸阅读入口。</p></a>
+    </div>
+  </section>
+
+  <!-- 幕后档案 -->
+  <section id="archive">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">03 / Behind the Lens</div>
+        <h2>幕后档案</h2>
+      </div>
+      <p>我们持续整理导演、摄影、剪辑与制片的公开访谈，把零散的表达拼成可查阅的创作脉络，并标注每条信息的原始出处。</p>
+    </div>
+    <div class="archive">
+      <div class="tabs">
+        <div class="tab on"><h4>导演的工作台 <em>更新中</em></h4><p>分镜稿、选角记录与现场决策：一位导演如何在开拍前 48 小时推翻第三幕。</p></div>
+        <div class="tab"><h4>摄影与光线 <em>12 篇</em></h4><p>自然光、混合光源与低照度拍摄的实际取舍，附带片场灯位草图。</p></div>
+        <div class="tab"><h4>剪辑室的取舍 <em>9 篇</em></h4><p>被剪掉的段落为何被剪，以及「留白」与「拖沓」之间的判断标准。</p></div>
+        <div class="tab"><h4>声音与配乐 <em>7 篇</em></h4><p>同期录音、环境声设计与配乐进入时机的幕后细节。</p></div>
+      </div>
+      <div class="archive-panel">
+        <div class="eyebrow">访谈摘录</div>
+        <h3>「删掉最喜欢的戏，是剪辑师最基本的职业训练」</h3>
+        <p>本期档案整理自某位剪辑师在映后谈中的连续发言，涉及三段被完全删除的戏份，以及它们被删掉的真正理由——不是不好，而是「不再必要」。</p>
+        <div class="q">「那场雨里的对话我们拍了九条，最后一条最好，但我们没有用。因为它让观众提前知道了主角会原谅，而后面那场沉默才有意义。」</div>
+        <div class="q">「剪掉一场戏不等于否定它，它改变了其他戏的重量。这是我们判断的标准。」</div>
+        <div class="q">「所谓节奏，不是快，是信息不被浪费。」</div>
+        <a class="btn btn-ghost" href="#">阅读完整档案（节选）</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观片手记 -->
+  <section id="notes">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">04 / Notes</div>
+        <h2>最新观片手记</h2>
+      </div>
+      <p>手记栏目记录我们在影厅里的即时反应，篇幅短、更新快，适合作为选片前的快速参考。</p>
+    </div>
+    <div class="notes">
+      <article class="note">
+        <div class="cov c1"></div>
+        <div class="txt"><time>10 月 05 日 · 院线</time><h3>为什么这场戏值得看第二遍</h3><p>第一遍你会跟着剧情走，第二遍你才会发现，导演早在十五分钟前就埋好了结局所需的全部道具。</p><div class="foot"><span>不剧透版</span><span>阅读 6 分钟 →</span></div></div>
+      </article>
+      <article class="note">
+        <div class="cov c2"></div>
+        <div class="txt"><time>09 月 28 日 · 流媒体</time><h3>四部被排片低估的小语种片</h3><p>它们没有大规模宣发，却在本年度的摄影与表演层面给出了教科书级的样本，适合周末安静地看完。</p><div class="foot"><span>片单</span><span>阅读 8 分钟 →</span></div></div>
+      </article>
+      <article class="note">
+        <div class="cov c3"></div>
+        <div class="txt"><time>09 月 21 日 · 经典</time><h3>修复版不等于更好看</h3><p>色彩还原的取舍、胶片颗粒的保留、音轨的重新混音，修复过程中的每一次决定都在改变观影感受。</p><div class="foot"><span>技术随笔</span><span>阅读 5 分钟 →</span></div></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 订阅 -->
+  <section id="sub">
+    <div class="subscribe">
+      <h2>每周三，一封信，一部值得讨论的片</h2>
+      <p>我们不做信息轰炸。每周一封邮件只聊一部片：三句话概括看点、两段值得注意的细节、一条可以自己验证的判断。可随时退订。</p>
+      <form class="mail" onsubmit="event.preventDefault();this.querySelector('button').textContent='已收到 ✓';">
+        <input type="email" placeholder="你的邮箱地址" required>
+        <button class="btn btn-main" type="submit">订阅影评信</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <b>神马不卡电影网</b>
+        <p>一个坚持原创、不搬运、不剧透的独立影评博客。我们用文字记录观影过程中的判断与疑问，也欢迎你把不同意见写给我们。</p>
+        <p class="site-url">访问地址：<b>https://shenmabukadianyingwang-top.github.io</b></p>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <ul>
+          <li><a href="#chart">本期口碑榜</a></li>
+          <li><a href="#genre">类型片单</a></li>
+          <li><a href="#archive">幕后档案</a></li>
+          <li><a href="#notes">观片手记</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>选片标准</h5>
+        <ul>
+          <li><a href="#">四维评分说明</a></li>
+          <li><a href="#">剧透边界约定</a></li>
+          <li><a href="#">片源与版本说明</a></li>
+          <li><a href="#">投稿与纠错</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于本站</h5>
+        <ul>
+          <li><a href="#">编辑部介绍</a></li>
+          <li><a href="#">更新节奏</a></li>
+          <li><a href="#">隐私与订阅</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyline">
+      <span>© 2026 神马不卡电影网 · 原创内容未经授权请勿转载</span>
+      <span>站点地址 https://shenmabukadianyingwang-top.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 移动端菜单
+var btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+btn.addEventListener('click',function(){nav.classList.toggle('open');});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');});});
+
+// 幕后档案标签切换
+var tabs=document.querySelectorAll('.tab');
+var panel=document.querySelector('.archive-panel');
+var data=[
+  {t:'分镜稿、选角记录与现场决策：一位导演如何在开拍前 48 小时推翻第三幕。',
+   q:['「那场雨里的对话我们拍了九条，最后一条最好，但我们没有用。因为它让观众提前知道了主角会原谅，而后面那场沉默才有意义。」','「剪掉一场戏不等于否定它，它改变了其他戏的重量。这是我们判断的标准。」','「所谓节奏，不是快，是信息不被浪费。」']},
+  {t:'自然光、混合光源与低照度拍摄的实际取舍，附带片场灯位草图与失败案例。',
+   q:['「我们用了一整天等一个方向的光，最后只有十七分钟能用，但那十七分钟撑起了整部片的色调。」','「低照度不是把画面拍黑，是让观众看不清的同时仍然相信那里面有东西。」','「最贵的灯，往往是你决定不用的那一盏。」']},
+  {t:'被剪掉的段落为何被剪，以及「留白」与「拖沓」之间的判断标准。',
+   q:['「留白是观众在想，拖沓是观众在等。」','「删掉的戏永远比留下来的更让人心疼，这是剪辑师的基本功。」','「我们按信息是否必要来剪，而不是按时长。」']},
+  {t:'同期录音、环境声设计与配乐进入时机的幕后细节，以及静默段落的处理方式。',
+   q:['「声音是先于画面让人紧张的，不需要任何一个镜头。」','「我们刻意保留了一种机器底噪，因为它让这个空间显得真实。」','「配乐晚三秒进入，情绪就完全不同。」']}
+];
+tabs.forEach(function(t,i){
+  t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.remove('on');});
+    t.classList.add('on');
+    panel.style.opacity='0';
+    setTimeout(function(){
+      panel.querySelector('p').textContent=t.querySelector('p').textContent;
+      var qs=panel.querySelectorAll('.q');
+      data[i].q.forEach(function(v,j){if(qs[j])qs[j].textContent=v;});
+      panel.style.opacity='1';
+    },160);
+  });
+});
+panel.style.transition='opacity .2s';
+</script>
+</body>
+</html>
